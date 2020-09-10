@@ -1,0 +1,65 @@
+:root {
+    --ungu: #573280;
+    --putih: #ffffff;
+    --hitam: #000000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 3% 5%;
+    box-shadow: -1px -11px 13px 8px #000000
+
+}
+
+.navbar a {
+    color: var(--hitam);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar .brand {
+    width: 20%;
+}
+
+.navbar .menu-container {
+    width: 80%;
+    float: right;
+}
+
+.navbar .menu-container .menu {
+    list-style-type: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.navbar .menu-container .menu .menu-item {
+    display: inline;
+    margin: 0 3%;
+    text-transform: capitalize;
+}
+
+.navbar .menu-container .menu .signup {
+    background-color: var(--ungu);
+    padding: 1% 2%;
+    border-radius: 5px;
+}
+
+.navbar .menu-container .menu .signup .menu-link {
+    color: var(--putih);
+}
+
+.navbar .menu-container .menu .login {
+    border: solid 2px var(--ungu);
+    padding: 1% 2%;
+}
+
+.homepage .grid {
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
