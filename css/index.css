@@ -1,3 +1,4 @@
+@import url("responsive.css");
 :root {
   --ungu: #573280;
   --putih: #ffffff;
@@ -14,7 +15,7 @@ body {
   display: flex;
   flex-flow: row nowrap;
   padding: 3% 5%;
-  box-shadow: -1px -11px 13px 8px #000000;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
 }
 
 .navbar a {
@@ -25,6 +26,13 @@ body {
 
 .navbar .brand {
   width: 20%;
+}
+
+.navbar .brand .bar {
+    background: none;
+    border: none;
+    color: var(--ungu);
+    display: none;
 }
 
 .navbar .menu-container {
@@ -121,15 +129,14 @@ body {
 
 .homepage .flex .image .info {
   position: absolute;
-  top: 50px;
-  margin: 5%;
-  right: 0px;
+  top: 120px;
+  right: 50px;
   text-transform: capitalize;
   background: rgba(87, 50, 128, 0.5);
   color: var(--putih);
   font-size: 14px;
   font-weight: 600;
-  padding: 1%;
+  padding: 0.5% 2%;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
 }
