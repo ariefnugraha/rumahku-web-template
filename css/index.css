@@ -16,6 +16,7 @@ body {
   flex-flow: row nowrap;
   padding: 3% 5%;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+  text-transform: capitalize;
 }
 
 .navbar a {
@@ -26,6 +27,11 @@ body {
 
 .navbar .brand {
   width: 20%;
+}
+
+.navbar .brand a {
+    color: var(--ungu);
+    font-weight: bold;
 }
 
 .navbar .brand .bar {
@@ -44,6 +50,7 @@ body {
   list-style-type: none;
   margin-block-start: 0;
   margin-block-end: 0;
+  padding-inline-start: 0;
 }
 
 .navbar .menu-container .menu .menu-item {
@@ -93,6 +100,7 @@ body {
 .homepage .flex .text {
   padding: 2% 5%;
   width: 30%;
+  height: 500px;
 }
 
 .homepage .flex .text .title {
@@ -116,6 +124,13 @@ body {
   padding: 3% 10%;
   border-radius: 10px;
   font-size: 20px;
+}
+
+.homepage .flex .text .info {
+    color: var(--ungu);
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: center;
 }
 
 .homepage .flex .image {
@@ -158,6 +173,7 @@ body {
   position: absolute;
   border-radius: 10px;
   display: none;
+  z-index: 100;
 }
 
 .product-item .product-title {
@@ -180,13 +196,13 @@ body {
 }
 
 .homepage .flex .image .dot-one {
-  top: 150px;
+  top: 45vh;
   right: 610px;
 }
 
 .homepage .flex .image .item-one {
-  top: 200px;
-  right: 510px;
+  top: 25vh;
+  right: 25vw;
 }
 
 .homepage .flex .image .dot-two {
@@ -195,18 +211,8 @@ body {
 }
 
 .homepage .flex .image .item-two {
-  top: 520px;
-  right: 297px;
-}
-
-.homepage .flex .image .dot-three {
-  top: 470px;
-  right: 300px;
-}
-
-.homepage .flex .image .item-three {
-  top: 300px;
-  right: 40px;
+  top: 70vh;
+  right: 21vw;
 }
 
 .carousel {

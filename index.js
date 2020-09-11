@@ -6,25 +6,33 @@ $(document).ready(function () {
         $('.menu-container').toggle(500);
     })
 
+    //TUTUP SELURUH CARD PRODUCT APABILA GAMBAR DI KLIK
+    $(".homepage-image").click(function (e) { 
+        e.preventDefault();
+        $('.item-one').hide(500);
+        $('.item-two').hide(500);
+    });
+
     $(".dot-one").click(function (e) {
         e.preventDefault();
         $('.item-one').toggle(500);
         $('.item-two').hide(500);
-        $('.item-three').hide(500);
     });
 
     $(".dot-two").click(function (e) {
         e.preventDefault();
         $('.item-two').toggle(500);
         $('.item-one').hide(500);
-        $('.item-three').hide(500);
     });
 
-    $(".dot-three").click(function (e) {
+
+    //TUTUP SELURUH GAMBAR APABILA GAMBAR DALAM CAROUSEL DI KLIK DI KLIK
+    $(".carousel-image").click(function (e) { 
         e.preventDefault();
-        $('.item-three').toggle(500);
-        $('.item-one').hide(500);
-        $('.item-two').hide(500);
+        $('.item-carousel-one').hide(500)
+        $('.item-carousel-two').hide(500);
+        $('.item-carousel-three').hide(500);
+        $('#item-carousel-one').hide(500);
     });
 
     $(".dot-carousel-one").click(function (e) { 
@@ -73,12 +81,10 @@ function typeWriter() {
 let slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
-function plusSlides(n) {
+function toggleSlides(n) {
     showSlides(slideIndex += n);
 }
 
-// Thumbnail image controls
 function currentSlide(n) {
     showSlides(slideIndex = n);
 }
