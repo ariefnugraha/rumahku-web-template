@@ -304,8 +304,8 @@
   }
 
   .menu-container .menu {
-      padding-inline-start: 0;
-      padding: 0 5%;
+    padding-inline-start: 0;
+    padding: 0 5%;
   }
 
   .menu-container .menu .menu-item {
@@ -319,7 +319,7 @@
   }
 
   .homepage .flex .text .readmore {
-      padding: 6% 10% 9% 10% !important;
+    padding: 6% 10% 9% 10% !important;
   }
 
   .homepage .flex .image .dot-one {
@@ -333,8 +333,8 @@
   }
 
   .product-item {
-      width: 30% !important;
-      padding: 2% 5% !important;
+    width: 30% !important;
+    padding: 2% 5% !important;
   }
 
   .homepage .flex .image .item-one {
@@ -365,6 +365,5 @@
   .carousel .content-two .product #item-carousel-one {
     top: 5vh !important;
     left: 31vw !important;
-}
   }
 }
