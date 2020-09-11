@@ -43,13 +43,14 @@
     flex-flow: column wrap !important;
   }
 
-  .homepage .flex .text {
-      height: 392px;
-  }
-
   .homepage .flex .text,
   .homepage .flex .image {
     width: 100% !important;
+  }
+
+  .homepage .flex .text {
+    padding: 5% 0 !important;
+    height: 392px !important;
   }
 
   .homepage .flex .text .title {
