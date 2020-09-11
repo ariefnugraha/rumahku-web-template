@@ -83,8 +83,8 @@
   }
 
   .homepage .flex .image .dot-one {
-    top: 555px !important;
-    left: 84px !important;
+    top: 71vh !important;
+    left: 23vw !important;
   }
 
   .product-item {
@@ -94,12 +94,12 @@
   }
 
   .homepage .flex .image .item-one {
-    top: 94vh !important;
-    right: 22vw !important;
+    top: 68vh !important;
+    right: 9vw !important;
   }
 
   .homepage .flex .image .dot-two {
-    top: 126vh !important;
+    top: 116vh !important;
     right: 63vw !important;
   }
 
@@ -109,7 +109,7 @@
   }
 
   .homepage .flex .image .dot-three {
-    top: 111vh !important;
+    top: 103vh !important;
     right: 65vw !important;
   }
 
