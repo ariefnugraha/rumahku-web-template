@@ -1,9 +1,10 @@
 @import url("responsive.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
 :root {
   --ungu: #573280;
   --putih: #ffffff;
   --hitam: #000000;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Poppins", sans-serif;
   box-sizing: border-box;
 }
 
@@ -11,10 +12,20 @@ body {
   margin: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h5,
+p {
+  margin: 0;
+}
+
 .navbar {
   display: flex;
   flex-flow: row nowrap;
-  padding: 3% 5%;
+  padding: 25px 40px;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
   text-transform: capitalize;
 }
@@ -22,74 +33,62 @@ body {
 .navbar a {
   color: var(--hitam);
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .navbar .brand {
-  width: 20%;
+  width: auto;
 }
 
 .navbar .brand a {
-    color: var(--ungu);
-    font-weight: bold;
+  color: var(--ungu);
+  font-weight: bold;
 }
 
 .navbar .brand .bar {
-    background: none;
-    border: none;
-    color: var(--ungu);
-    display: none;
+  background: none;
+  border: none;
+  color: var(--ungu);
+  display: none;
 }
 
 .navbar .menu-container {
-  width: 80%;
-  float: right;
+  width: auto;
 }
 
 .navbar .menu-container .menu {
+  margin: 0;
   list-style-type: none;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  padding-inline-start: 0;
 }
 
 .navbar .menu-container .menu .menu-item {
   display: inline;
-  margin: 0 3%;
+  margin: 0 20px;
   text-transform: capitalize;
 }
 
-.navbar .menu-container .menu .signup {
-  background-color: var(--ungu);
-  padding: 1% 2%;
+.navbar .account {
+  margin-left: auto;
+}
+
+.navbar .account a:first-child {
+  border: solid 1px var(--ungu);
+  color: var(--ungu);
   border-radius: 5px;
+  padding: 10px 20px;
 }
 
-.navbar .menu-container .menu .signup:hover a {
-    color: var(--putih);
+.navbar .account a:first-child:hover {
+  background-color: var(--ungu);
+  color: #fff;
+  transition: 0.5s;
 }
 
-.navbar .menu-container .menu .signup .menu-link {
-  color: var(--putih);
-}
-
-.navbar .menu-container .menu .menu-link:hover {
-    color: var(--ungu);
-}
-
-.navbar .menu-container .menu .login {
-  border: solid 2px var(--ungu);
-  padding: 1% 2%;
-  border-radius: 10px;
-}
-
-.navbar .menu-container .menu .login:hover {
-    background-color: var(--ungu);
-    transition: 0.5s;
-}
-
-.navbar .menu-container .menu .login:hover a {
-    color: var(--putih);
+.navbar .account a:last-child {
+  background: var(--ungu);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
 }
 
 .homepage .flex {
@@ -98,48 +97,50 @@ body {
 }
 
 .homepage .flex .text {
-  padding: 2% 5%;
-  width: 30%;
-  height: 500px;
+  padding: 50px 40px 50px 40px;
+  width: 40%;
 }
 
 .homepage .flex .text .title {
   text-transform: capitalize;
   font-weight: 600;
   font-size: 40px;
+  line-height: 130%;
 }
 
 .homepage .flex .text .subtitle {
+  margin: 20px 0;
   font-size: 18px;
   text-transform: capitalize;
 }
 
 .homepage .flex .text .readmore {
   display: inline-block;
-  margin: 5% 0;
   background-color: var(--ungu);
   color: var(--putih);
   text-decoration: none;
   text-transform: capitalize;
-  padding: 3% 10%;
-  border-radius: 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
   font-size: 20px;
+  font-weight: 500;
 }
 
 .homepage .flex .text .info {
-    color: var(--ungu);
-    font-weight: bold;
-    text-transform: capitalize;
-    text-align: center;
+  margin-top: 20px;
+  color: var(--ungu);
+  text-transform: capitalize;
 }
 
 .homepage .flex .image {
-  width: 70%;
+  width: 60%;
+  height: 560px;
 }
 
 .homepage .flex .image img {
   width: 100%;
-  height: 800px;
+  height: 100%;
+  object-fit: cover;
 }
 
 .homepage .flex .image .info {
@@ -225,8 +226,8 @@ body {
 }
 
 .carousel-content img {
-    width: 100%;
-    height: 700px;
+  width: 100%;
+  height: 700px;
 }
 
 .prev,
@@ -243,7 +244,7 @@ body {
 }
 
 .prev {
-    left: 50px;
+  left: 50px;
 }
 
 .next {
@@ -258,44 +259,42 @@ body {
   border-radius: 50%;
 }
 
-
 .carousel .content-one .product .dot-carousel-one {
-    top: 330px;
-    left: 150px;     
+  top: 330px;
+  left: 150px;
 }
 
 .carousel .content-one .product .dot-carousel-two {
-    top: 330px;
-    left: 620px;
+  top: 330px;
+  left: 620px;
 }
 
 .carousel .content-one .product .dot-carousel-three {
-    top: 50px;
-    right: 180px;
+  top: 50px;
+  right: 180px;
 }
 
 .carousel .content-one .product .item-carousel-one {
-    top: 190px;
-    left: 200px;
+  top: 190px;
+  left: 200px;
 }
 
-
 .carousel .content-one .product .item-carousel-two {
-    top: 190px;
-    left: 700px;
+  top: 190px;
+  left: 700px;
 }
 
 .carousel .content-one .product .item-carousel-three {
-    right: 250px;
-    top: 10px;
+  right: 250px;
+  top: 10px;
 }
 
 .carousel .content-two .product #dot-carousel-one {
-    bottom: 300px;
-    left: 650px;  
+  bottom: 300px;
+  left: 650px;
 }
 
 .carousel .content-two .product #item-carousel-one {
-    top: 100px;
-    left: 700px;
+  top: 100px;
+  left: 700px;
 }
